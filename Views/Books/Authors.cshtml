@@ -1,0 +1,19 @@
+@model IEnumerable<BookMvcApp.Models.Author>
+
+<h1>Authors</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var author in Model)
+    {
+        <tr>
+            <td>@author.Name</td>
+        </tr>
+    }
+    </tbody>
+</table>
